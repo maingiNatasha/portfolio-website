@@ -4,54 +4,54 @@ import { FaAngleDown, FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdAttachEmail } from "react-icons/md";
 import { motion, MotionConfig } from "framer-motion";
 
-const containerVariants = {
-	hidden: {
-		opacity: 0,
-	},
-	visible: {
-		opacity: 1,
-		transition: {
-			staggerChildren: 0.5,
-			delayChildren: 0.5
-		}
-	}
-};
-
-const itemVariants = {
-	hidden: {
-		opacity: 0,
-		y: 100,
-	},
-	visible: {
-		opacity: 1,
-		y: 0,
-		transition: {
-			duration: 0.6,
-			ease: 'easeInOut'
-		}
-	}
-};
-
-const charVariants = {
-	hidden: {
-		opacity: 0,
-	},
-	visible: (index) => ({
-		opacity: 1,
-		transition: {
-			delay: index * 0.175,
-			ease: 'easeInOut'
-		}
-	})
-};
-
-const splitText = (text) => text.split('').map((char, index) => (
-	<motion.span key={index} custom={index} variants={charVariants}>
-		{char}
-	</motion.span>
-));
-
 const HeroSection = () => {
+	const containerVariants = {
+		hidden: {
+			opacity: 0,
+		},
+		visible: {
+			opacity: 1,
+			transition: {
+				staggerChildren: 0.5,
+				delayChildren: 0.5
+			}
+		}
+	};
+
+	const itemVariants = {
+		hidden: {
+			opacity: 0,
+			y: 150,
+		},
+		visible: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 0.6,
+				ease: 'easeInOut'
+			}
+		}
+	};
+
+	const charVariants = {
+		hidden: {
+			opacity: 0,
+		},
+		visible: (index) => ({
+			opacity: 1,
+			transition: {
+				delay: index * 0.175,
+				ease: 'easeInOut'
+			}
+		})
+	};
+
+	const splitText = (text) => text.split('').map((char, index) => (
+		<motion.span key={index} custom={index} variants={charVariants}>
+			{char}
+		</motion.span>
+	));
+
 	return (
 		<div className='hero-container flex flex-col overflow-hidden items-center justify-center text-center'>
 			<motion.div
@@ -59,10 +59,9 @@ const HeroSection = () => {
 				initial='hidden'
 				animate='visible'
 				variants={containerVariants}
-				viewport={{ once: true }}
 			>
 				<motion.div className='hero-content' variants={itemVariants}>
-					<h2 className='text-2xl md:text-3xl text-sky-600 font-extrabold uppercase'>
+					<h2 className='text-2xl md:text-3xl text-sky-600 dark:text-sky-500 font-extrabold uppercase'>
 						{splitText('Hello, World.')}
 					</h2>
 				</motion.div>

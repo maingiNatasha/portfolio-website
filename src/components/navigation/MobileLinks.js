@@ -47,8 +47,8 @@ const MobileLinks = ({ toggleNavbar }) => {
                         smooth={true}
                         duration={500}
                         spy={true}
-                        activeClass='text-sky-600 font-bold'
-                        className='cursor-pointer hover:text-sky-600 hover:underline underline-offset-4 transition duration-300'
+                        activeClass='text-sky-600 dark:text-sky-500 font-bold'
+                        className='cursor-pointer hover:text-sky-600 dark:hover:text-sky-500 hover:underline underline-offset-4 transition duration-300'
                     >
                         {navLink.name}
                     </Link>

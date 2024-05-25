@@ -1,12 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-	content: [],
+	content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
 	darkMode: "class",
 	theme: {
 		extend: {
 			fontFamily: {
 				nunito: ['Nunito', 'sans-serif'],
+			},
+			fontWeight: {
+				'extra-black': '1000' // Custom font weight
 			}
 		},
 	},
