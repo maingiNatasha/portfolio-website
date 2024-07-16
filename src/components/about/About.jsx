@@ -1,7 +1,7 @@
 import React from 'react';
 import Skills from './Skills';
 //import SlideInDiv from './SlideInDiv';
-import FadeInDiv from './FadeInDiv';
+import FadeInDiv from '../animated divs/FadeInDiv';
 
 const About = () => {
     return (

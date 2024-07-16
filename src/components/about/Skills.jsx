@@ -1,5 +1,5 @@
 import React from 'react';
-import { skills } from '../localData/Skillset';
+import { skills } from '../../localData/Skillset';
 import { motion } from 'framer-motion';
 
 const Skills = () => {
@@ -31,7 +31,7 @@ const Skills = () => {
     };
 
     return (
-        <div className='py-10'>
+        <div className='pt-10 pb-5'>
             <div>
                 <h1 className='font-extra-black text-2xl text-sky-600 dark:text-sky-500 uppercase tracking-wide'>Skills</h1>
                 <h3 className='font-bold text-3xl tracking-wide my-2 md:my-4'>Languages, Frameworks and Tech stack</h3>
