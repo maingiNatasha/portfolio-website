@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { IoSchoolSharp } from "react-icons/io5";
@@ -10,51 +10,28 @@ const SchoolIcon = () => {
     )
 };
 
-const Education = () => {
-    const [theme, setTheme] = useState(() => {
-        const savedTheme = localStorage.getItem('theme');
-        return savedTheme ? savedTheme : 'light';
-    });
-
-    useEffect(() => {
-        const handleThemeChange = () => {
-            const currentTheme = localStorage.getItem('theme');
-            console.log(currentTheme);
-            setTheme(currentTheme ? currentTheme : 'light');
-        };
-
-        // Event is fired when any change is made to local storage
-        window.addEventListener('storage', handleThemeChange);
-
-        // Cleanup function to prevent memory leaks
-        return () => {
-            window.removeEventListener('storage', handleThemeChange);
-        };
-    }, []);
-
+const Education = ({ theme }) => {
     const darkMode = theme === 'dark';
-    console.log(theme);
-    console.log(darkMode);
 
     return (
         <div className='py-10'>
             <FadeInDiv>
-                <h1 className='font-extra-black text-xl text-sky-600 dark:text-sky-500 uppercase tracking-wide my-3'>Education</h1>
+                <h1 className='font-extra-black text-xl text-sky-600 dark:text-sky-500 uppercase tracking-wide my-4'>Education</h1>
                 <div>
                     <VerticalTimeline>
                         <VerticalTimelineElement
-                            className='vertical-timeline-element--work'
+                            className='vertical-timeline-element--work text-white dark:text-black'
                             contentStyle={{
-                                background: darkMode  ? 'rgba(14, 165, 233, 0.5)' : 'rgb(243 244 246)',
-                                color: darkMode ? 'white': 'black'
+                                background: darkMode  ? 'rgba(14, 165, 233, 0.3)' : 'rgba(255, 255, 255, 0.6)',
+                                color: darkMode ? 'rgb(229 231 235)': 'black'
                             }}
                             contentArrowStyle={{
-                                borderRight: `7px solid ${darkMode  ? 'rgba(14, 165, 233, 0.5)' : 'rgb(243 244 246)'}`
+                                borderRight: `7px solid ${darkMode  ? 'rgba(14, 165, 233, 0.3)' : 'rgb(243 244 246)'}`
                             }}
                             date="August 2018 - August 2023"
                             icon={<SchoolIcon />}
                             iconStyle={{
-                                background: darkMode  ? 'rgba(14, 165, 233, 0.5))' : 'rgb(243 244 246)',
+                                background: darkMode  ? 'rgb(12 74 110)' : 'rgb(243 244 246)',
                                 color: darkMode ? 'white': 'black'
                             }}
                         >

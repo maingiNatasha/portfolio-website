@@ -3,7 +3,7 @@ import Experience from "./Experience";
 import Education from "./Education";
 import FadeInDiv from '../animated divs/FadeInDiv';
 
-const Resume = () => {
+const Resume = ({ theme }) => {
     return (
         <section id='resume' className='py-10 md:py-20 min-h-screen'>
             <div className='w-[85%] md:w-[75%] lg:w-[65%] m-auto text-center'>
@@ -12,8 +12,8 @@ const Resume = () => {
                     <h3 className='font-bold text-3xl tracking-wide my-1'>More of my credentials</h3>
                 </FadeInDiv>
                 <div className='py-6'>
-                    <Experience />
-                    <Education />
+                    <Experience theme={theme} />
+                    <Education theme={theme} />
                 </div>
             </div>
         </section>

@@ -4,7 +4,7 @@ import Links from './Links';
 import MobileNav from './MobileNav';
 import classNames from 'classnames';
 
-const Navbar = () => {
+const Navbar = ({ theme, toggleTheme}) => {
     const [isSticky, setIsSticky] = useState(false);
 
     useEffect(() => {
@@ -35,7 +35,7 @@ const Navbar = () => {
         <nav className={navbarClasses}>
             <div className='flex justify-between items-center py-4 px-8'>
                 <div>
-                    <ThemeToggle />
+                    <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
                 </div>
                 <div className='hidden md:block'>
                     <Links />
