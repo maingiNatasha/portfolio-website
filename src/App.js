@@ -3,11 +3,12 @@ import Navbar from "./components/navigation/Navbar";
 import HeroSection from "./components/hero/HeroSection";
 import About from "./components/about/About";
 import Resume from "./components/resume/Resume";
+import Projects from "./components/projects/Projects";
 
 const App = () => {
     const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem('theme');
-        return savedTheme ? savedTheme : 'light';
+        return savedTheme ? savedTheme : 'dark';
     });
 
     useEffect(() => {
@@ -32,6 +33,7 @@ const App = () => {
                 <div>
                     <About />
                     <Resume theme={theme} />
+                    <Projects />
                 </div>
             </div>
         </>
