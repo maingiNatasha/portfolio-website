@@ -6,7 +6,7 @@ import FadeInDiv from '../animated divs/FadeInDiv';
 const About = () => {
     return (
         <section id='about' className='py-10 md:py-20 min-h-screen'>
-            <div className='w-[85%] md:w-[75%] lg:w-[60%] m-auto text-center'>
+            <div className='w-[85%] md:w-[80%] lg:w-[75%] m-auto text-center'>
                 <FadeInDiv>
                     <div>
                         <h1 className='font-extra-black text-2xl text-sky-600 dark:text-sky-500 uppercase tracking-wide'>About</h1>

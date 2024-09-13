@@ -51,8 +51,8 @@ export const skills = [
     },
     {
         id: 11,
-        name: 'PHP',
-        image: 'svg-icons/php2-svgrepo-com.svg'
+        name: 'Mongo DB',
+        image: 'svg-icons/mongodb-svgrepo-com.svg'
     },
     {
         id: 12,

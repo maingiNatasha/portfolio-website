@@ -14,4 +14,9 @@ export const navLinks = [
         name: 'Projects',
         link: 'projects'
     },
+    {
+        id: 4,
+        name: 'Contact',
+        link: 'contact'
+    },
 ];

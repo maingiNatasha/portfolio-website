@@ -14,10 +14,10 @@ const Education = ({ theme }) => {
     const darkMode = theme === 'dark';
 
     return (
-        <div className='py-10'>
+        <div className='py-10 mt-4'>
             <FadeInDiv>
                 <h1 className='font-extra-black text-xl text-sky-600 dark:text-sky-500 uppercase tracking-wide my-4'>Education</h1>
-                <div>
+                <div className='mt-2'>
                     <VerticalTimeline>
                         <VerticalTimelineElement
                             className='vertical-timeline-element--work text-white dark:text-black'

@@ -4,6 +4,7 @@ import HeroSection from "./components/hero/HeroSection";
 import About from "./components/about/About";
 import Resume from "./components/resume/Resume";
 import Projects from "./components/projects/Projects";
+import Contact from './components/contact/Contact';
 
 const App = () => {
     const [theme, setTheme] = useState(() => {
@@ -34,6 +35,7 @@ const App = () => {
                     <About />
                     <Resume theme={theme} />
                     <Projects />
+                    <Contact />
                 </div>
             </div>
         </>

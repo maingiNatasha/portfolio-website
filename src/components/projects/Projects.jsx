@@ -6,18 +6,18 @@ import { motion } from "framer-motion";
 const Projects = () => {
   return (
     <section id='projects' className='py-10 md:py-20 min-h-screen'>
-        <div className='w-[85%] md:w-[75%] lg:w-[60%] m-auto text-center'>
+        <div className='w-[85%] md:w-[80%] lg:w-[75%] m-auto text-center'>
             <FadeInDiv>
                 <div>
                     <h1 className='font-extra-black text-2xl text-sky-600 dark:text-sky-500 uppercase tracking-wide'>Projects</h1>
                 </div>
             </FadeInDiv>
             <FadeInDiv>
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-4 lg:gap-7 py-8'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 lg:gap-16 pt-8 lg:p-8'>
                     {projects.map((project) => (
                         <motion.div
                             key={project.id}
-                            className=' px-4 py-6 rounded-lg dark:shadow-sky-800 shadow-sky-600 shadow-md'
+                            className='px-4 lg:px-6 py-6 rounded-lg dark:shadow-sky-800 shadow-sky-600 shadow-md'
                             whileHover={{
                                 scale: 1.035,
                                 y: -3,
