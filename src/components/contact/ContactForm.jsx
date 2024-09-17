@@ -27,24 +27,20 @@ const ContactForm = () => {
 
         emailjs
             .sendForm(
-                process.env.EMAIL_SERVICE_ID,
-                process.env.EMAIL_TEMPLATE_ID,
+                process.env.REACT_APP_EMAIL_SERVICE_ID,
+                process.env.REACT_APP_EMAIL_TEMPLATE_ID,
                 form.current,
-                { publicKey: process.env.EMAIL_USER_ID }
+                { publicKey: process.env.REACT_APP_EMAIL_USER_ID }
             )
             .then((result) => {
                 console.log('Success', result);
             })
             .catch((error) => {
                 console.error('Error', error);
-            })
+            });
 
         setLoading(false);
-        //setFormData(initialState);
-
-        // setTimeout(() => {
-        //     setLoading(false);
-        // }, 3000);
+        setFormData(initialState);
     };
 
     return (
