@@ -9,7 +9,8 @@ const Projects = () => {
         <div className='w-[85%] md:w-[80%] lg:w-[75%] m-auto text-center'>
             <FadeInDiv>
                 <div>
-                    <h1 className='font-extra-black text-2xl text-sky-600 dark:text-sky-500 uppercase tracking-wide'>Projects</h1>
+                    <h1 className='font-bold text-4xl text-sky-600 dark:text-sky-500 tracking-wide'>Projects</h1>
+                    <h3 className='font-bold text-3xl tracking-wide my-4'>A small collection of recent personal projects</h3>
                 </div>
             </FadeInDiv>
             <FadeInDiv>

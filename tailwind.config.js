@@ -7,9 +7,6 @@ module.exports = {
 			fontFamily: {
 				nunito: ['Nunito', 'sans-serif'],
 			},
-			fontWeight: {
-				'extra-black': '1000' // Custom font weight
-			}
 		},
 	},
 	plugins: [],

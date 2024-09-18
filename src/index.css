@@ -44,6 +44,26 @@ body {
 }
 
 .animation {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
+}
+
+/* Background styles */
+.light-theme-gradient {
+    @apply bg-gradient-to-l from-[#F0F9FF] to-[#F3F4F6];
+}
+
+.dark-theme-gradient {
+    @apply bg-gradient-to-l from-[#030712] to-black;
+}
+
+/* Scrollbar styles */
+.light-theme-scrollbar::-webkit-scrollbar {
+    /* display: none; */
+    background-color: white;
+}
+
+.dark-theme-scrollbar::-webkit-scrollbar {
+    /* display: none; */
+    background-color: black;
 }

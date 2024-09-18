@@ -16,7 +16,7 @@ const Experience = ({ theme }) => {
     return (
         <div className='py-5'>
             <FadeInDiv>
-                <h1 className='font-extra-black text-xl text-sky-600 dark:text-sky-500 uppercase tracking-wide my-4'>Work Experience</h1>
+                <h1 className='font-bold text-2xl text-sky-600 dark:text-sky-500 tracking-wide my-4'>Work Experience</h1>
                 <div className='mt-2'>
                     <VerticalTimeline>
                         <VerticalTimelineElement

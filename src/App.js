@@ -5,6 +5,8 @@ import About from "./components/about/About";
 import Resume from "./components/resume/Resume";
 import Projects from "./components/projects/Projects";
 import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
+// import classNames from 'classnames';
 
 const App = () => {
     const [theme, setTheme] = useState(() => {
@@ -27,18 +29,19 @@ const App = () => {
     };
 
     return (
-        <>
+        <div className={`${theme}-theme-scrollbar`}>
             <Navbar theme={theme} toggleTheme={toggleTheme} />
             <HeroSection />
-            <div className="bg-gray-100 dark:bg-gray-900 text-black dark:text-white">
+            <div className={`${theme}-theme-gradient text-black dark:text-white`}>
                 <div>
                     <About />
                     <Resume theme={theme} />
                     <Projects />
                     <Contact />
+                    <Footer />
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

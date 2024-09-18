@@ -24,10 +24,10 @@ const Navbar = ({ theme, toggleTheme}) => {
     }, [])
 
     const navbarClasses = classNames(
-        'navbar fixed w-full top-0 left-0 z-10 transition duration-300',
+        'navbar fixed w-full top-0 left-0 z-10 transition duration-200',
         {
             'bg-transparent text-white' : !isSticky,
-            'shadow-lg bg-gray-100 dark:bg-gray-900 text-black dark:text-white' : isSticky,
+            [`${theme}-theme-gradient text-black dark:text-white shadow-lg`]: isSticky,
         }
     );
 

@@ -16,7 +16,7 @@ const Education = ({ theme }) => {
     return (
         <div className='py-10 mt-4'>
             <FadeInDiv>
-                <h1 className='font-extra-black text-xl text-sky-600 dark:text-sky-500 uppercase tracking-wide my-4'>Education</h1>
+                <h1 className='font-bold text-2xl text-sky-600 dark:text-sky-500 tracking-wide my-4'>Education</h1>
                 <div className='mt-2'>
                     <VerticalTimeline>
                         <VerticalTimelineElement

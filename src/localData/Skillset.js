@@ -67,6 +67,6 @@ export const skills = [
     {
         id: 14,
         name: 'Github',
-        image: 'svg-icons/github-142-svgrepo-com.svg'
+        image: 'svg-icons/github-code-source-svgrepo-com.svg'
     },
 ];
