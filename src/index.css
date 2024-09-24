@@ -57,13 +57,6 @@ body {
     @apply bg-gradient-to-l from-[#030712] to-black;
 }
 
-/* Scrollbar styles */
-.light-theme-scrollbar::-webkit-scrollbar {
-    /* display: none; */
-    background-color: white;
-}
-
-.dark-theme-scrollbar::-webkit-scrollbar {
-    /* display: none; */
-    background-color: black;
+::-webkit-scrollbar {
+    display: none;
 }

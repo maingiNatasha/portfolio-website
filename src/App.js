@@ -6,6 +6,7 @@ import Resume from "./components/resume/Resume";
 import Projects from "./components/projects/Projects";
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
+import ProgressBar from './components/navigation/ProgressBar';
 // import classNames from 'classnames';
 
 const App = () => {
@@ -29,7 +30,8 @@ const App = () => {
     };
 
     return (
-        <div className={`${theme}-theme-scrollbar`}>
+        <>
+            <ProgressBar />
             <Navbar theme={theme} toggleTheme={toggleTheme} />
             <HeroSection />
             <div className={`${theme}-theme-gradient text-black dark:text-white`}>
@@ -41,7 +43,7 @@ const App = () => {
                     <Footer />
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 

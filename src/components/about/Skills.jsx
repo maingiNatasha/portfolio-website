@@ -10,8 +10,7 @@ const Skills = () => {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.25,
-                delayChildren: 0.25
+                staggerChildren: 0.175,
             }
         }
     };
