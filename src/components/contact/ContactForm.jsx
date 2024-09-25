@@ -1,6 +1,4 @@
 import React, { useState, useRef } from 'react';
-import Lottie from 'lottie-react';
-import mailAnimation from '../../animations/mail-animation.json';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
@@ -47,9 +45,6 @@ const ContactForm = () => {
 
     return (
         <form ref={form} className='p-6 md:p-10 shadow-gray-500 shadow-md rounded-md mt-4' onSubmit={handleOnSubmit}>
-            <div className='flex items-center justify-center pb-2'>
-                <Lottie animationData={mailAnimation} className='animation' />
-            </div>
             <div className='flex flex-col space-y-6'>
                 <input id='name' className='w-full p-2 rounded-md bg-gray-200 dark:bg-sky-900 placeholder:text-black dark:placeholder:text-white' type='text' name='name' placeholder='Name' value={name} onChange={handleOnChange} required />
                 <input id='email' className='w-full p-2 rounded-md bg-gray-200 dark:bg-sky-900 placeholder:text-black dark:placeholder:text-white' type='text' name='email' placeholder='E-mail' value={email} onChange={handleOnChange} required />

@@ -1,8 +1,8 @@
 import React from 'react';
-
+import Lottie from 'lottie-react';
 import FadeInDiv from '../animated divs/FadeInDiv';
-
 import ContactForm from './ContactForm';
+import contactAnimation from '../../animations/contact-animation.json';
 
 const Contact = () => {
 	return (
@@ -15,7 +15,10 @@ const Contact = () => {
 					</div>
 				</FadeInDiv>
 				<FadeInDiv>
-					<div className=''>
+					<div className='grid grid-cols-1 md:grid-cols-2'>
+						<div className='flex items-center justify-center'>
+							<Lottie animationData={contactAnimation} className='animation' />
+						</div>
 						<div className='flex items-center justify-center'>
 							<ContactForm />
 						</div>
