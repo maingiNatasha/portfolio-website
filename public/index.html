@@ -26,7 +26,12 @@
 		-->
 		<title>Portfolio</title>
 		<!-- Add Google Fonts link here -->
-		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+		<!-- Preconnect to Google Fonts and Google Static -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<!-- Preload Google Fonts -->
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"></noscript>
 		<!-- End Google Fonts link -->
 	</head>
 	<body>

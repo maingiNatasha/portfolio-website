@@ -17,7 +17,7 @@ export const projects = [
                 icon: "svg-icons/tailwind-svgrepo-com.svg"
             },
         ],
-        image: "images/landing-page.png",
+        image: "images/landing-page.webp",
         github: "https://github.com/maingiNatasha/next-react-static-web-app",
         link: "https://next-react-static-web-app.vercel.app/"
     },
@@ -39,7 +39,7 @@ export const projects = [
                 icon: "svg-icons/tailwind-svgrepo-com.svg"
             },
         ],
-        image: "images/react-blog.png",
+        image: "images/react-blog.webp",
         github: "https://github.com/maingiNatasha/blog-app",
         link: "https://blog-app-rust-nu.vercel.app/"
     },
@@ -73,7 +73,7 @@ export const projects = [
                 icon: "svg-icons/mongodb-svgrepo-com.svg"
             },
         ],
-        image: "images/mern-tasks.png",
+        image: "images/mern-tasks.webp",
         github: "https://github.com/maingiNatasha/task-mern",
         link: "https://task-mern-natasha.netlify.app/"
     },
