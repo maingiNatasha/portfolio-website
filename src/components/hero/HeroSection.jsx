@@ -40,7 +40,7 @@ const HeroSection = () => {
 		visible: (index) => ({
 			opacity: 1,
 			transition: {
-				delay: index * 0.175,
+				delay: index * 0.125,
 				ease: 'easeInOut'
 			}
 		})
@@ -66,12 +66,12 @@ const HeroSection = () => {
 					</h1>
 				</motion.div>
 				<motion.div className='hero-content' variants={itemVariants}>
-					<h2 className='text-4xl md:text-6xl lg:text-7xl font-extrabold text-white my-4'>
+					<h2 className='text-3xl md:text-5xl lg:text-6xl font-extrabold text-white my-4'>
 						{splitText("I'm Natasha Maingi.")}
 					</h2>
 				</motion.div>
 				<motion.div className='hero-content' variants={itemVariants}>
-					<h3 className='md:text-lg text-white font-semibold'>
+					<h3 className='md:text-lg text-white md:font-semibold'>
 						{splitText('SOFTWARE DEVELOPER')} <span className="mx-2">|</span> {splitText('WEB DEVELOPER')} <span className="mx-2">|</span> {splitText('FRONT-END DEVELOPER')}
 					</h3>
 				</motion.div>

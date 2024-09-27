@@ -10,7 +10,7 @@ const Skills = () => {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.175,
+                staggerChildren: 0.15,
             }
         }
     };
@@ -33,7 +33,7 @@ const Skills = () => {
         <div className='pt-14 md:px-6 lg:px-12'>
             <div>
                 <h1 className='font-bold text-4xl text-sky-600 dark:text-sky-500 tracking-wide'>Skills</h1>
-                <h2 className='font-bold text-3xl tracking-wide my-2 md:my-4'>Languages, Frameworks and Tech stack</h2>
+                <h2 className='font-bold text-2xl lg:text-3xl tracking-wide my-2 md:my-4'>Languages, Frameworks and Tech stack</h2>
                 <motion.div
                     className='flex flex-wrap space-x-4 md:space-x-6 justify-center py-6'
                     initial='hidden'

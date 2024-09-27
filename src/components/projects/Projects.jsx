@@ -10,7 +10,7 @@ const Projects = () => {
             <FadeInDiv>
                 <div>
                     <h1 className='font-bold text-4xl text-sky-600 dark:text-sky-500 tracking-wide'>Projects</h1>
-                    <h2 className='font-bold text-3xl tracking-wide my-4'>A small collection of recent personal projects</h2>
+                    <h2 className='font-bold text-2xl lg:text-3xl tracking-wide my-4'>A small collection of recent personal projects</h2>
                 </div>
             </FadeInDiv>
             <FadeInDiv>

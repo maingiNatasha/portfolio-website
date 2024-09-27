@@ -10,7 +10,7 @@ const About = () => {
                 <FadeInDiv>
                     <div>
                         <h1 className='font-bold text-4xl text-sky-600 dark:text-sky-500 tracking-wide'>About</h1>
-                        <h2 className='font-bold text-3xl tracking-wide my-4'>Let me introduce myself.</h2>
+                        <h2 className='font-bold text-2xl lg:text-3xl tracking-wide my-4'>Let me introduce myself.</h2>
                     </div>
                 </FadeInDiv>
                 <FadeInDiv>
