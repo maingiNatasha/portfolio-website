@@ -15,6 +15,8 @@ const MobileNav = () => {
 		<>
 			<div className='md:hidden'>
 				<motion.button
+					aria-label='Menu'
+				    className='flex items-center justify-center p-4 text-2xl font-bold tracking-widest text-gray-800 dark:text-gray-200'
 					onClick={toggleNavbar}
 					whileHover={{
 						scale:1.1,

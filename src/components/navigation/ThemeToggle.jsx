@@ -7,6 +7,7 @@ const ThemeToggle = ({theme, toggleTheme}) => {
 
     return (
         <motion.button
+            aria-label='Theme'
             onClick={toggleTheme}
             whileHover={{
                 scale: 1.05,

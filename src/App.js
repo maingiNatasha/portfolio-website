@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import Navbar from "./components/navigation/Navbar";
-import HeroSection from "./components/hero/HeroSection";
-import About from "./components/about/About";
-import Resume from "./components/resume/Resume";
-import Projects from "./components/projects/Projects";
-import Contact from './components/contact/Contact';
-import Footer from './components/footer/Footer';
-import ProgressBar from './components/navigation/ProgressBar';
-// import classNames from 'classnames';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
+
+const ProgressBar = lazy(() => import("./components/navigation/ProgressBar"));
+const Navbar = lazy(() => import("./components/navigation/Navbar"));
+const HeroSection = lazy(() => import("./components/hero/HeroSection"));
+const About = lazy(() => import("./components/about/About"));
+const Resume = lazy(() => import("./components/resume/Resume"));
+const Projects = lazy(() => import("./components/projects/Projects"));
+const Contact = lazy(() => import("./components/contact/Contact"));
+const Footer = lazy(() => import("./components/footer/Footer"));
 
 const App = () => {
     const [theme, setTheme] = useState(() => {
@@ -31,18 +31,18 @@ const App = () => {
 
     return (
         <>
-            <ProgressBar />
-            <Navbar theme={theme} toggleTheme={toggleTheme} />
-            <HeroSection />
-            <div className={`${theme}-theme-gradient text-black dark:text-white`}>
-                <div>
+            <Suspense fallback={<div>Loading...</div>}>
+                <ProgressBar />
+                <Navbar theme={theme} toggleTheme={toggleTheme} />
+                <HeroSection />
+                <div className={`${theme}-theme-gradient text-black dark:text-white`}>
                     <About />
                     <Resume theme={theme} />
                     <Projects />
                     <Contact />
                     <Footer />
                 </div>
-            </div>
+            </Suspense>
         </>
     );
 }

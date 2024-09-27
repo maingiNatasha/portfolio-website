@@ -11,7 +11,7 @@ const Contact = () => {
 				<FadeInDiv>
 					<div>
 						<h1 className='font-bold text-4xl text-sky-600 dark:text-sky-500 tracking-wide'>Contact</h1>
-						<h3 className='font-bold text-3xl tracking-wide my-4'>Reach out and let's get in touch</h3>
+						<h2 className='font-bold text-3xl tracking-wide my-4'>Reach out and let's get in touch</h2>
 					</div>
 				</FadeInDiv>
 				<FadeInDiv>

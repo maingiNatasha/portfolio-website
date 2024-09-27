@@ -61,14 +61,14 @@ const HeroSection = () => {
 				variants={containerVariants}
 			>
 				<motion.div className='hero-content' variants={itemVariants}>
-					<h2 className='text-2xl md:text-3xl text-sky-600 dark:text-sky-500 font-extrabold uppercase'>
+					<h1 className='text-2xl md:text-3xl text-sky-600 dark:text-sky-500 font-extrabold uppercase'>
 						{splitText('Hello, World.')}
-					</h2>
+					</h1>
 				</motion.div>
 				<motion.div className='hero-content' variants={itemVariants}>
-					<h1 className='text-4xl md:text-6xl lg:text-7xl font-extrabold text-white my-4'>
+					<h2 className='text-4xl md:text-6xl lg:text-7xl font-extrabold text-white my-4'>
 						{splitText("I'm Natasha Maingi.")}
-					</h1>
+					</h2>
 				</motion.div>
 				<motion.div className='hero-content' variants={itemVariants}>
 					<h3 className='md:text-lg text-white font-semibold'>
@@ -111,13 +111,13 @@ const HeroSection = () => {
 								ease: 'easeInOut'
 							}}
 						>
-							<motion.a href='https://github.com/maingiNatasha' target='_blank' rel='noreferrer'>
+							<motion.a href='https://github.com/maingiNatasha' target='_blank' rel='noreferrer' aria-label='Github'>
 								<FaGithub size={35} className='hover:text-sky-600' />
 							</motion.a>
-							<motion.a href='https://www.linkedin.com/in/natasha-maingi-026a4a254/' target='_blank' rel='noreferrer'>
+							<motion.a href='https://www.linkedin.com/in/natasha-maingi-026a4a254/' target='_blank' rel='noreferrer' aria-label='LinkedIn'>
 								<FaLinkedin size={35} className='hover:text-sky-600' />
 							</motion.a>
-							<motion.a href='mailto:mainginatasha@gmail.com' target='_blank' rel='noreferrer'>
+							<motion.a href='mailto:mainginatasha@gmail.com' target='_blank' rel='noreferrer' aria-label='Gmail'>
 								<MdAttachEmail size={35} className='hover:text-sky-600' />
 							</motion.a>
 						</MotionConfig>

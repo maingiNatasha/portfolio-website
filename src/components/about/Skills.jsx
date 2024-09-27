@@ -33,7 +33,7 @@ const Skills = () => {
         <div className='pt-14 md:px-6 lg:px-12'>
             <div>
                 <h1 className='font-bold text-4xl text-sky-600 dark:text-sky-500 tracking-wide'>Skills</h1>
-                <h3 className='font-bold text-3xl tracking-wide my-2 md:my-4'>Languages, Frameworks and Tech stack</h3>
+                <h2 className='font-bold text-3xl tracking-wide my-2 md:my-4'>Languages, Frameworks and Tech stack</h2>
                 <motion.div
                     className='flex flex-wrap space-x-4 md:space-x-6 justify-center py-6'
                     initial='hidden'
@@ -55,7 +55,7 @@ const Skills = () => {
                                 }
                             }}
                         >
-                            <img src={skill.image} alt={`${skill.name} icon`} title={skill.name} className='h-14 w-14' />
+                            <img src={skill.image} alt={`${skill.name} icon`} title={skill.name} className='h-14 w-14' loading='lazy' />
                         </motion.div>
                     ))}
                 </motion.div>

@@ -10,7 +10,7 @@ const Projects = () => {
             <FadeInDiv>
                 <div>
                     <h1 className='font-bold text-4xl text-sky-600 dark:text-sky-500 tracking-wide'>Projects</h1>
-                    <h3 className='font-bold text-3xl tracking-wide my-4'>A small collection of recent personal projects</h3>
+                    <h2 className='font-bold text-3xl tracking-wide my-4'>A small collection of recent personal projects</h2>
                 </div>
             </FadeInDiv>
             <FadeInDiv>
@@ -28,7 +28,7 @@ const Projects = () => {
                                 }
                             }}
                         >
-                            <img src={project.image} alt={project.title} className='rounded-lg object-cover w-full' />
+                            <img src={project.image} alt={project.title} className='rounded-lg object-cover' loading='lazy' />
                             <div className='p-4'>
                                 <h3 className='text-xl font-bold'>{project.title}</h3>
                                 <p className='mt-2'>{project.description}</p>
@@ -40,6 +40,7 @@ const Projects = () => {
                                         alt={tech.name}
                                         title={tech.name}
                                         className='w-8 h-8'
+                                        loading='lazy'
                                         whileHover={{
                                             scale: 1.1,
                                             y: -3,
