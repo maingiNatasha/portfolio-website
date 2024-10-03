@@ -33,7 +33,7 @@ const Navbar = ({ theme, toggleTheme}) => {
 
     return (
         <nav className={navbarClasses}>
-            <div className='flex justify-between items-center py-4 px-8'>
+            <div className='flex justify-between items-center py-1 px-4 md:py-4 md:px-8'>
                 <div>
                     <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
                 </div>
