@@ -1,4 +1,5 @@
 import React, { useState, useEffect, Suspense, lazy } from 'react';
+import Loader from './components/Loader';
 
 const ProgressBar = lazy(() => import("./components/navigation/ProgressBar"));
 const Navbar = lazy(() => import("./components/navigation/Navbar"));
@@ -31,7 +32,7 @@ const App = () => {
 
     return (
         <>
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={ <Loader /> }>
                 <ProgressBar />
                 <Navbar theme={theme} toggleTheme={toggleTheme} />
                 <HeroSection />

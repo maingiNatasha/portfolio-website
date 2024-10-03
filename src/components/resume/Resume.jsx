@@ -1,5 +1,6 @@
 import React, { Suspense, lazy} from 'react';
 import FadeInDiv from '../animated divs/FadeInDiv';
+import Loader from '../Loader';
 
 const Experience = lazy(() => import("./Experience"));
 const Education = lazy(() => import("./Education"));
@@ -12,7 +13,7 @@ const Resume = ({ theme }) => {
                     <h1 className='font-bold text-4xl text-sky-600 dark:text-sky-500 tracking-wide'>Resume</h1>
                     <h2 className='font-bold text-2xl lg:text-3xl tracking-wide mt-2'>More of my credentials</h2>
                 </FadeInDiv>
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={ <Loader /> }>
                     <div className='py-6 mt-4'>
                         <Experience theme={theme} />
                         <Education theme={theme} />
