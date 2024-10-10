@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 
 const initialState = {
     name: "",
@@ -34,13 +35,21 @@ const ContactForm = () => {
             )
             .then((result) => {
                 console.log('Success', result);
+                toast.info("Message sent successfully 😁", {
+                    className: 'dark:bg-black dark:text-white'
+                });
             })
             .catch((error) => {
                 console.error('Error', error);
+                toast.error("Message failed to send. Please try again later", {
+                    className: 'dark:bg-black dark:text-white'
+                });
+            })
+            .finally(() => {
+                setLoading(false);
+                setFormData(initialState);
             });
 
-        setLoading(false);
-        setFormData(initialState);
     };
 
     return (
@@ -67,7 +76,7 @@ const ContactForm = () => {
                         type='submit'
                         disabled={loading}
                     >
-                        {loading ? "Sending message..." : "Send"}
+                        {loading ? "Sending..." : "Send"}
                     </motion.button>
                 </div>
             </div>

@@ -1,5 +1,7 @@
 import React, { useState, useEffect, Suspense, lazy } from 'react';
 import Loader from './components/Loader';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 const ProgressBar = lazy(() => import("./components/navigation/ProgressBar"));
 const Navbar = lazy(() => import("./components/navigation/Navbar"));
@@ -44,6 +46,7 @@ const App = () => {
                     <Footer />
                 </div>
             </Suspense>
+            <ToastContainer />
         </>
     );
 }
