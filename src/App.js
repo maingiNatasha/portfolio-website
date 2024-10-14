@@ -33,12 +33,14 @@ const App = () => {
     };
 
     return (
-        <>
+        <div className={`min-h-screen ${theme}-theme-gradient`}>
             <Suspense fallback={ <Loader /> }>
                 <ProgressBar />
                 <Navbar theme={theme} toggleTheme={toggleTheme} />
-                <HeroSection />
-                <div className={`${theme}-theme-gradient text-black dark:text-white`}>
+                <div className={`hero-container ${theme}`}>
+                    <HeroSection />
+                </div>
+                <div className='text-black dark:text-white'>
                     <About />
                     <Resume theme={theme} />
                     <Projects />
@@ -47,7 +49,7 @@ const App = () => {
                 </div>
             </Suspense>
             <ToastContainer />
-        </>
+        </div>
     );
 }
 

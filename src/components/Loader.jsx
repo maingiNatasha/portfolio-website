@@ -10,7 +10,7 @@ const Loader = () => {
                 visible={true}
                 ariaLabel="falling-circles-loading"
             />
-            <h3 className='font-bold text-2xl '>Loading...</h3>
+            <h3 className='font-bold text-2xl dark:text-white'>Loading...</h3>
         </div>
     )
 };

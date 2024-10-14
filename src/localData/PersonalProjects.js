@@ -6,7 +6,7 @@ export const projects = [
         technologies: [
             {
                 name: "nextjs",
-                icon: "svg-icons/next-js-svgrepo-com.svg"
+                icon: "svg-icons/nextjs-svgrepo-com.svg"
             },
             {
                 name: "reactjs",

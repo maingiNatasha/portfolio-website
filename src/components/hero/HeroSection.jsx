@@ -55,22 +55,22 @@ const HeroSection = () => {
 	return (
 		<div className='hero-container flex flex-col overflow-hidden items-center justify-center text-center'>
 			<motion.div
-				className='px-8 pt-10 md:pt-16 lg:pt-20'
+				className='hero-content px-8 pt-10 md:pt-16 lg:pt-20'
 				initial='hidden'
 				animate='visible'
 				variants={containerVariants}
 			>
-				<motion.div className='hero-content' variants={itemVariants}>
+				<motion.div variants={itemVariants}>
 					<h1 className='text-2xl md:text-3xl text-sky-600 dark:text-sky-500 font-extrabold uppercase'>
 						{splitText('Hello, World.')}
 					</h1>
 				</motion.div>
-				<motion.div className='hero-content' variants={itemVariants}>
+				<motion.div variants={itemVariants}>
 					<h2 className='text-3xl md:text-5xl lg:text-6xl font-extrabold text-white my-4'>
 						{splitText("I'm Natasha Maingi.")}
 					</h2>
 				</motion.div>
-				<motion.div className='hero-content' variants={itemVariants}>
+				<motion.div variants={itemVariants}>
 					<h3 className='md:text-lg text-white md:font-semibold'>
 						{splitText('SOFTWARE DEVELOPER')} <span className="mx-2">|</span> {splitText('WEB DEVELOPER')} <span className="mx-2">|</span> {splitText('FRONT-END DEVELOPER')}
 					</h3>
